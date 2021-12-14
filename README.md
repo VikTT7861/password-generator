@@ -1,10 +1,6 @@
 # Password Generator
-
-## Generate your password easy & chill
-
 ---
-
-### Features
+## Features
 
 |Password|Max lenght|Min lenght|
 |--------|----------|----------|
@@ -12,7 +8,10 @@
 
 ---
 
+
 ## Password Options To Choose
+
+---
 
 * Password length
 * Include uppercase letters
