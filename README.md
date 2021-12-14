@@ -1,8 +1,10 @@
 # Password Generator
 
-### Generate your password easy and chill
+## Generate your password easy & chill
 
 ---
+
+### Features
 
 |Password|Max lenght|Min lenght|
 |--------|----------|----------|
@@ -10,12 +12,14 @@
 
 ---
 
-## Password Features
+## Password Options To Choose
 
 * Password length
 * Include uppercase letters
 * Include lowercase letters
 * Include numbers
 * Include symbols
+
+---
 
 > A simple program to generate a strong random password
