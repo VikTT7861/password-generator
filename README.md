@@ -1,4 +1,5 @@
 # Password Generator
+> A simple program to generate a strong random password
 ---
 ## Features
 
@@ -20,7 +21,5 @@
 * Include symbols
 
 ---
-
-> A simple program to generate a strong random password
 
 >NOTE: This code was retrieved from <https://github.com/smthari/Password-generator-using-html-css-javascript> and this code in this respository is only for practice purposes. 
