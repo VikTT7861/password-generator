@@ -2,8 +2,6 @@
 
 ## Generate your password easy & chill
 
----
-
 ### Features
 
 |Password|Max lenght|Min lenght|
