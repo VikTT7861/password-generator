@@ -17,9 +17,9 @@
 
 <body>
 
-    <!-- Dark mode toggle switch -->
+    <!-- Dark/Light Mode Toggle Switch -->
     <nav>
-        <div class="darkmode">
+        <div class="switch-dark-light">
             <label name="theme-switch" for="checkbox">
                 <input type="checkbox" id="checkbox">
                 <div class="slider round"></div>
@@ -32,7 +32,7 @@
     <div class="container">
         <h2>Password Generator</h2>
         <div class="result-container">
-            <textarea id="PasswordResult"></textarea>
+            <textarea readonly id="PasswordResult"></textarea>
         </div>
 
         <!-- Options that can be choose -->
@@ -57,16 +57,15 @@
                 <label>Include symbols</label>
                 <input type="checkbox" id="symbols" checked>
             </div>
-
-            <!-- Buttons interaction -->
-            <div class="buttons">
-                <button class="btn btn-large" id="generateBtn">
+        </div>
+        <!-- Buttons interaction -->
+        <div class="buttons">
+            <button class="btn btn-large" id="generateBtn">
                 <i class="fa fa-key"></i> Generate
             </button>
-                <button class="btn" id="clipboardBtn">
+            <button class="btn" id="clipboardBtn">
                 <i class="fa fa-clipboard"></i> Copy
             </button>
-            </div>
         </div>
     </div>
 
