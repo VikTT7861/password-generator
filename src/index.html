@@ -17,11 +17,11 @@
 
 <body>
 
-    <!-- Dark mode toggle switch -->
+    <!-- Dark/Light Mode Toggle Switch -->
     <nav>
-        <div class="darkmode">
-            <label name="theme-switch" for="checkbox">
-                <input type="checkbox" id="checkbox">
+        <div class="switch-dark-light">
+            <label class="theme-switch" for="checkbox">
+                <input type="checkbox" id="checkbox" >
                 <div class="slider round"></div>
             </label>
             <em>Switch Theme</em>
@@ -32,14 +32,12 @@
     <div class="container">
         <h2>Password Generator</h2>
         <div class="result-container">
-            <textarea id="PasswordResult"></textarea>
+            <textarea readonly id="PasswordResult"></textarea>
         </div>
-
-        <!-- Options that can be choose -->
         <div class="settings">
             <div class="setting">
                 <label>Password length</label>
-                <input type="number" min="8" max="20" value="8" id="Passwordlength">
+                <input type="number" id="Passwordlength" min="4" max="20" value="8">
             </div>
             <div class="setting">
                 <label>Include uppercase letters</label>
@@ -57,21 +55,20 @@
                 <label>Include symbols</label>
                 <input type="checkbox" id="symbols" checked>
             </div>
-
-            <!-- Buttons interaction -->
-            <div class="buttons">
-                <button class="btn btn-large" id="generateBtn">
+        </div>
+        <div class="buttons">
+            <button class="btn btn-large" id="generateBtn">
                 <i class="fa fa-key"></i> Generate
             </button>
-                <button class="btn" id="clipboardBtn">
+            <button class="btn" id="clipboardBtn">
                 <i class="fa fa-clipboard"></i> Copy
             </button>
-            </div>
         </div>
     </div>
 
     <!-- Own Javascript -->
     <script defer src="js/index.js"></script>
+
 </body>
 
 <!-- *´¨)

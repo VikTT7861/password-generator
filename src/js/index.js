@@ -1,4 +1,4 @@
-// Adding functions for the options to choose.
+/* Adding functions for the options to choose. */
 const getRandomLower = () => {
     return String.fromCharCode(Math.floor(Math.random() * 26) + 97);
 }
@@ -16,7 +16,7 @@ const getRandomSymbol = () => {
     return symbols[Math.floor(Math.random() * symbols.length)];
 }
 
-//Creating objects for better use
+/* Creating objects for better use */
 const randomFunc = {
     lower: getRandomLower,
     upper: getRandomUpper,
@@ -24,7 +24,7 @@ const randomFunc = {
     symbol: getRandomSymbol,
 };
 
-// Start coding functionality to generate button
+/* Start coding functionality to generate button */
 const generate = document.getElementById('generateBtn');
 generate.addEventListener('click', () => {
     const length = document.getElementById('Passwordlength').value;
@@ -37,7 +37,7 @@ generate.addEventListener('click', () => {
     result.innerText = generatePassword(hasUpper, hasLower, hasNumber, hasSymbol, length);
 });
 
-//Creating the password function
+/* Creating the password function */
 const generatePassword = (lower, upper, number, symbol, length) => {
     let generatePassword = '';
     const typesCount = lower + upper + number + symbol;
@@ -54,9 +54,33 @@ const generatePassword = (lower, upper, number, symbol, length) => {
     return finalPassword;
 }
 
-//Creating the copy to clipboard function
+/* Creating the copy to clipboard function */
 let button = document.getElementById('clipboardBtn');
 button.addEventListener('click', (e) => {
     e.preventDefault();
     document.execCommand('copy', false, document.getElementById('PasswordResult').select());
 });
+
+/* Dark mode toggle function */
+const toggleSwitch = document.querySelector('.theme-switch input[type=checkbox]');
+const currentTheme = localStorage.getItem('theme');
+
+if (currentTheme) {
+    document.documentElement.setAttribute('data-theme', currentTheme);
+
+    if (currentTheme === 'dark') {
+        toggleSwitch.checked = true;
+    }
+}
+
+const switchTheme = (e) => {
+    if (e.target.checked) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        localStorage.setItem('theme', 'dark');
+    } else {
+        document.documentElement.setAttribute('data-theme', 'light');
+        localStorage.setItem('theme', 'light');
+    }
+}
+
+toggleSwitch.addEventListener('change', switchTheme, false);
