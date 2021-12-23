@@ -6,20 +6,23 @@ import ROUTER from "./routes";
 const PORT = process.env.PORT || 3000;
 
 try {
-    
+
     const app = express();
+
+    app.use(express.static('src/static'));
 
     app.use(helmet());
     app.use(express.json());
     app.use(cors());
-    
+
     // routes
     app.use("/", ROUTER);
-    
+
     // start express server
     app.listen(PORT);
-    
+
     console.log(`The server has started on port ${PORT}. Open http://localhost:${PORT}/ to see results`);
 } catch (error) {
     console.error(error);
 }
+
