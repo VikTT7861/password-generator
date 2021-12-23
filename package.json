@@ -1,7 +1,7 @@
 {
     "name": "password-generator",
     "version": "1.0.0",
-    "description": "A password generator, use to create random passwords",
+    "description": "A simple program to generate a strong random password",
     "main": "index.ts",
     "scripts": {
         "start": "ts-node src/index.ts",

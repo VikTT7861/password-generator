@@ -5,6 +5,7 @@
 /* Creating variables */
 
 [data-theme="light"] {
+    --nav-bg: #f3f3f3;
     --bg-color: #eef0f4;
     --color: #333;
     --togglebg: #333;
@@ -37,12 +38,16 @@
     font-family: 'DaddyTimeMono NF', 'Poppins', sans-serif;
 }
 
-
-/* Start coding */
-
 body {
     background: var(--bg-color);
     color: var(--color);
+}
+
+nav {
+    background: var(--nav-bg);
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px 24px;
 }
 
 p {
@@ -58,6 +63,80 @@ input[type=checkbox] {
     margin-right: 0;
 }
 
+hr {
+    border: dotted grey;
+    border-bottom: none;
+    border-width: 4px;
+    width: 50%;
+}
+
+
+/* Navbar Options */
+
+.header {
+    display: flex;
+    align-items: baseline;
+    padding: .5rem;
+    gap: 1rem;
+    margin-right: 75%;
+}
+
+.link {
+    background: none;
+    border: none !important;
+    text-decoration: none;
+    color: #999;
+    cursor: pointer;
+}
+
+.dropdown.active>.link,
+.link:hover {
+    color: var(--togglesliderColor);
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-heading {
+    margin: 10px 0;
+}
+
+.dropdown-menu {
+    position: absolute;
+    left: 0;
+    top: calc(100% + .25rem);
+    background: #fff;
+    padding: .75rem;
+    border-radius: .25rem;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .1);
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-10px);
+    transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+}
+
+.dropdown.active>.link+.dropdown-menu {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+.information-grid {
+    display: grid;
+    grid-template-columns: repeat(1, max-content);
+    gap: 2rem;
+}
+
+.dropdown-links {
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+}
+
+
+/* Start coding */
+
 .container {
     padding: 20px;
     width: 350px;
@@ -65,7 +144,7 @@ input[type=checkbox] {
     background: var(--bg-color);
     border: 12px solid var(--bg-color);
     filter: var(--filter1);
-    margin: auto;
+    margin: 45px auto;
 }
 
 .result-container {
@@ -132,12 +211,6 @@ textarea {
 
 
 /* Switch Theme */
-
-nav {
-    display: flex;
-    justify-content: flex-end;
-    padding: 20px 24px;
-}
 
 .switch-dark-light {
     display: flex;

@@ -19,6 +19,39 @@
 
     <!-- Dark/Light Mode Toggle Switch -->
     <nav>
+        <div class="header">
+            <div class="dropdown" data-dropdown>
+                <button class="link" data-dropdown-button>Features</button>
+                <div class="dropdown-menu information-grid">
+                    <div>
+                        <div class="dropdown-heading">Generate Passwords</div>
+                        <div class="dropdown-links">
+                            <a href="#" class="link">Strong Passwords</a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="dropdown-heading">Save Passwords</div>
+                        <div class="dropdown-links">
+                            <a href="#" class="link">Manage Passwords</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dropdown" data-dropdown>
+                <button class="link" data-dropdown-button>Encrypt Text</button>
+                <div class="dropdown-menu information-grid">
+                    <div>
+                        <div class="dropdown-heading">Encryption</div>
+                        <div class="dropdown-links">
+                            <a href="#" class="link">Sha1</a>
+                            <a href="#" class="link">Sha256</a>
+                            <a href="#" class="link">Sha384</a>
+                            <a href="#" class="link">Sha512</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="switch-dark-light">
             <label class="theme-switch" for="checkbox">
                 <input type="checkbox" id="checkbox" >
@@ -68,12 +101,14 @@
 
     <!-- Own Javascript -->
     <script defer src="js/index.js"></script>
+    <script defer src="js/dropdown-menu.js"></script>
 
 </body>
 
 <!-- *´¨)
 ¸.•´¸.•*´¨) ¸.•*¨)
-(¸.•´ (¸.•` ¤ Victor Zuniga S. 
+(¸.•´ (¸.•` ¤ Victor Zuniga S.
+            ¤ Carlos Mairena.
 
 NOTE: This code was retrieved from <https://github.com/smthari/Password-generator-using-html-css-javascript> and this code in this respository is only for practice purposes. -->
 
