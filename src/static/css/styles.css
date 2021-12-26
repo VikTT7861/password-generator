@@ -70,6 +70,25 @@ hr {
     width: 50%;
 }
 
+.footer {
+    background: var(--bg-color);
+    color: #777;
+    font-size: 0.75rem;
+    width: 100%;
+    padding-top: 50px;
+    text-align: center;
+    line-height: 3;
+}
+
+.footer .copy {
+    color: #777;
+    text-decoration: none;
+}
+
+.footer .copy:hover {
+    color: #000;
+}
+
 
 /* Navbar Options */
 

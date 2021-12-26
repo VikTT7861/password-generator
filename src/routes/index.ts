@@ -1,13 +1,13 @@
 import { NextFunction, Request, Response, Router } from "express";
-const path = require("path");
 
 const ROUTER = Router();
 
-ROUTER.get('', (request: Request, response: Response) => {
+ROUTER.get('/', (request: Request, response: Response) => {
     // return response.status(200).json({ message: 'Server works!' });
-    return response.sendFile('index.html', {
-        root: path.join(__dirname, '../')
-    });
+    // return response.sendFile('index.ejs', {
+    //     root: path.join(__dirname, '../view/')
+    // });
+    return response.render('index');
 });
 
 export default ROUTER;
