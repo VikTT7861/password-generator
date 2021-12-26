@@ -25,7 +25,8 @@
 ## Run development server
 
 To execute it, yo need to do the following steps:  
-1. Run `npm install` command to install the dependencies
+1. Run `npm i` command to install the dependencies
+2. RUN  `npm i ejs` command to install ejs for templates
 2. Run `npm run dev` command to run the server
 
 ---
