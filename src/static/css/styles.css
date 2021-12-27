@@ -5,19 +5,22 @@
 /* Creating variables */
 
 [data-theme="light"] {
-    --nav-bg: #f3f3f3;
+    --nav-bg: #f9f9f9;
     --bg-color: #eef0f4;
     --color: #333;
     --togglebg: #333;
     --roundcolor: #eef0f4;
+    --dropdown-menu-bg: #fafafa;
     --toggleslider: #111;
     --togglesliderColor: #111;
+    --footer-color: #777;
     --filter1: drop-shadow(-8px -8px 12px #ffffff) drop-shadow(8px 8px 12px #c3c5c8);
     --filter2: drop-shadow(-4px -4px 6px #ffffff) drop-shadow(4px 4px 6px #c3c5c8);
     --filter3: drop-shadow(-2px -2px 3px #ffffff) drop-shadow(2px 2px 3px #c3c5c8);
 }
 
 [data-theme="dark"] {
+    --nav-bg: #3a3a3a;
     --bg-color: #333;
     --color: #ccc;
     --roundcolor: #333;
@@ -70,25 +73,6 @@ hr {
     width: 50%;
 }
 
-.footer {
-    background: var(--bg-color);
-    color: #777;
-    font-size: 0.75rem;
-    width: 100%;
-    padding-top: 50px;
-    text-align: center;
-    line-height: 3;
-}
-
-.footer .copy {
-    color: #777;
-    text-decoration: none;
-}
-
-.footer .copy:hover {
-    color: #000;
-}
-
 
 /* Navbar Options */
 
@@ -97,7 +81,7 @@ hr {
     align-items: baseline;
     padding: .5rem;
     gap: 1rem;
-    margin-right: 70%;
+    margin-right: 66%;
 }
 
 .lang-icon {
@@ -136,7 +120,7 @@ hr {
     position: absolute;
     left: 0;
     top: calc(100% + .25rem);
-    background: #fff;
+    background: var(--dropdown-menu-bg);
     padding: .75rem;
     border-radius: .25rem;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .1);
@@ -164,8 +148,13 @@ hr {
     gap: .25rem;
 }
 
+.logo {
+    text-decoration: none;
+    color: #777;
+}
 
-/* Start coding */
+
+/* Content Page */
 
 .container {
     padding: 20px;
@@ -301,6 +290,29 @@ input:checked+.slider::before {
 
 .slider.round::before {
     border-radius: 50%;
+}
+
+
+/* Footer */
+
+.footer {
+    background: var(--nav-bg);
+    color: var(--footer-color);
+    font-size: 0.75rem;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 24px;
+    text-align: center;
+    line-height: 3;
+}
+
+.footer .copy {
+    color: var(--footer-color);
+    text-decoration: none;
+}
+
+.footer .copy:hover {
+    color: #000;
 }
 
 
