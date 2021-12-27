@@ -1,5 +1,5 @@
 # Password Generator
-> A simple program to generate a strong random password
+> A simple program to generate a strong random password as well as encrypt text and choose preferences.
 ---
 ## Features
 
