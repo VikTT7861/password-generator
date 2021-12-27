@@ -303,7 +303,7 @@ input:checked+.slider::before {
     padding-top: 50px;
     padding-bottom: 24px;
     text-align: center;
-    line-height: 3;
+    line-height: 4;
 }
 
 .footer .copy {
