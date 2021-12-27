@@ -16,3 +16,65 @@
 </head>
 
 <body>
+
+    <!-- Dark/Light Mode Toggle Switch -->
+    <nav>
+        <div class="header">
+            <div class="dropdown" data-dropdown>
+                <!-- Temporary  until we got a logo -->
+                <button class="link" data-dropdown-button><a class="logo" href="/"><img src="css/imgs/logo.png" alt="Home"></a> </button>
+            </div>
+            <div class="dropdown" data-dropdown>
+                <button class="link" data-dropdown-button>Language</button>
+                <div class="dropdown-menu information-grid">
+                    <div>
+                        <div class="dropdown-heading"><strong>Choose Language</strong></div>
+                        <div class="dropdown-links">
+                            <a href="#" class="link lang-link"><img class="lang-icon" src="css/imgs/english.png" alt="English"> English</a>
+                            <a href="#" class="link lang-link"><img class="lang-icon" src="css/imgs/spanish.png" alt="Spanish"> Spanish</a>
+                            <a href="#" class="link lang-link"><img class="lang-icon" src="css/imgs/portuguese.png" alt="Portuguese"> Portuguese</a>
+                            <a href="#" class="link lang-link"><img class="lang-icon" src="css/imgs/german.png" alt="German"> German</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dropdown" data-dropdown>
+                <button class="link" data-dropdown-button>Features</button>
+                <div class="dropdown-menu information-grid">
+                    <div>
+                        <div class="dropdown-heading"><strong>Generate Passwords</strong></div>
+                        <div class="dropdown-links">
+                            <a href="/password" class="link">Strong Passwords</a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="dropdown-heading"><strong>Save Passwords</strong></div>
+                        <div class="dropdown-links">
+                            <a href="#" class="link">Manage Passwords</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dropdown" data-dropdown>
+                <button class="link" data-dropdown-button>Encrypt Text</button>
+                <div class="dropdown-menu information-grid">
+                    <div>
+                        <div class="dropdown-heading"><strong>Encryption</strong></div>
+                        <div class="dropdown-links">
+                            <a href="#" class="link">Sha1</a>
+                            <a href="#" class="link">Sha256</a>
+                            <a href="#" class="link">Sha384</a>
+                            <a href="#" class="link">Sha512</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="switch-dark-light">
+            <label class="theme-switch" for="checkbox">
+                <input type="checkbox" id="checkbox" >
+                <div class="slider round"></div>
+            </label>
+            <em>Switch Theme</em>
+        </div>
+    </nav>
