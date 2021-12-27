@@ -1,0 +1,87 @@
+/* Navbar Options */
+
+nav {
+    background: var(--nav-bg);
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px 24px;
+    position: relative;
+}
+
+.header {
+    display: flex;
+    align-items: baseline;
+    padding: .5rem;
+    gap: 1rem;
+    position: absolute;
+    left: 0;
+}
+
+.lang-icon {
+    width: 30px;
+    position: relative;
+    top: 10px;
+}
+
+.lang-link {
+    position: relative;
+    bottom: 10px;
+}
+
+.link {
+    background: none;
+    border: none !important;
+    text-decoration: none;
+    color: #999;
+    cursor: pointer;
+}
+
+.dropdown.active>.link,
+.link:hover {
+    color: var(--togglesliderColor);
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-heading {
+    margin: 10px 0;
+}
+
+.dropdown-menu {
+    position: absolute;
+    left: 0;
+    top: calc(100% + .25rem);
+    background: var(--dropdown-menu-bg);
+    padding: .75rem;
+    border-radius: .25rem;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .1);
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-10px);
+    transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+}
+
+.dropdown.active>.link+.dropdown-menu {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+.information-grid {
+    display: grid;
+    grid-template-columns: repeat(1, max-content);
+    gap: 2rem;
+}
+
+.dropdown-links {
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+}
+
+.logo {
+    text-decoration: none;
+    color: #777;
+}

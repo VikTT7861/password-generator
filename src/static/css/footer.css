@@ -1,0 +1,19 @@
+/* Footer */
+
+.footer {
+    background: var(--nav-bg);
+    color: var(--footer-color);
+    font-size: 0.75rem;
+    width: 100%;
+    text-align: center;
+    line-height: 3;
+}
+
+.footer .copy {
+    color: var(--footer-color);
+    text-decoration: none;
+}
+
+.footer .copy:hover {
+    color: #000;
+}
