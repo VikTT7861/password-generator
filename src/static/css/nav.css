@@ -32,13 +32,13 @@ nav {
     background: none;
     border: none !important;
     text-decoration: none;
-    color: #999;
+    color: var(--navfoot-color);
     cursor: pointer;
 }
 
 .dropdown.active>.link,
 .link:hover {
-    color: var(--togglesliderColor);
+    color: var(--color2);
 }
 
 .dropdown {
@@ -47,6 +47,7 @@ nav {
 
 .dropdown-heading {
     margin: 10px 0;
+    pointer-events: none;
 }
 
 .dropdown-menu {
@@ -83,5 +84,5 @@ nav {
 
 .logo {
     text-decoration: none;
-    color: #777;
+    color: var(--navfoot-color);
 }

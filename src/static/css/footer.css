@@ -2,7 +2,7 @@
 
 .footer {
     background: var(--nav-bg);
-    color: var(--footer-color);
+    color: var(--navfoot-color);
     font-size: 0.75rem;
     width: 100%;
     text-align: center;
@@ -10,10 +10,10 @@
 }
 
 .footer .copy {
-    color: var(--footer-color);
+    color: var(--navfoot-color);
     text-decoration: none;
 }
 
 .footer .copy:hover {
-    color: #000;
+    color: var(--color2);
 }
