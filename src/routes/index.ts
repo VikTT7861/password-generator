@@ -11,4 +11,8 @@ ROUTER.get('/password', (request: Request, response: Response) => {
     return response.render('password');
 });
 
+ROUTER.get('/binary', (request: Request, response: Response) => {
+    return response.render('binary');
+});
+
 export default ROUTER;
