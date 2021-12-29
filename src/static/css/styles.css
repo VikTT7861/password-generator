@@ -11,6 +11,7 @@
 /* Creating variables */
 
 [data-theme="light"] {
+    --bg-image: url(imgs/PrnAnimation.gif);
     --nav-bg: #f9f9f9;
     --bg-color: #eef0f4;
     --color: #333;
@@ -27,6 +28,7 @@
 }
 
 [data-theme="dark"] {
+    --bg-image: url(imgs/DrkPrnAnimation.gif);
     --nav-bg: #3a3a3a;
     --bg-color: #333;
     --color: #ccc;
