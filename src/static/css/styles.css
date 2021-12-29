@@ -12,6 +12,7 @@
 
 [data-theme="light"] {
     --bg-image: url(imgs/PrnAnimation.gif);
+    --bg-size: 60% 80%;
     --nav-bg: #f9f9f9;
     --bg-color: #eef0f4;
     --color: #333;
@@ -29,6 +30,7 @@
 
 [data-theme="dark"] {
     --bg-image: url(imgs/DrkPrnAnimation.gif);
+    --bg-size: 30% 50%;
     --nav-bg: #3a3a3a;
     --bg-color: #333;
     --color: #ccc;

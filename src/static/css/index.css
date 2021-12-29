@@ -4,6 +4,7 @@
     height: 80vh;
     color: var(--togglesliderColor);
     background: var(--bg-image) no-repeat center;
+    background-size: var(--bg-size);
     padding: 1% 5%;
     pointer-events: none;
 }
