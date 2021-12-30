@@ -1,9 +1,14 @@
 <%- include('partials/header') -%>
 
     <div class="bin-container">
-        <textarea name="text" id="text"></textarea>
-        <button id="bin-btn"><i class="fa fa-code"></i> Convert</button>
-        <textarea readonly name="binary" id="binary"></textarea>
+        <div class="bin-content">
+            <textarea name="bin-input" id="bin-input"></textarea>
+            <div class="conv-btns">
+                <button id="btn-split"><i class="fa fa-code"></i> Separately</button>
+                <button id="btn-oneline"><i class="fa fa-code"></i> One-line</button>
+            </div>
+            <textarea readonly name="bin-converted" id="bin-converted"></textarea>
+        </div>
     </div>
 
     <%- include( 'partials/footer') -%>

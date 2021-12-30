@@ -1,17 +1,34 @@
-const btn = document.getElementById('bin-btn');
+const split = document.getElementById('btn-split');
+const oneline = document.getElementById('btn-oneline');
 
-btn.addEventListener('click', () => {
-    const text = document.getElementById('text').value;
-    const binary = document.getElementById('binary');
+split.addEventListener('click', () => {
+    const input = document.getElementById('bin-input').value;
+    const converted = document.getElementById('bin-converted');
 
-    binary.innerText = textToBinary(text);
+    converted.innerText = textToBinarySplit(input);
 
 });
 
-const textToBinary = (text = '') => {
+oneline.addEventListener('click', () => {
+    const input = document.getElementById('bin-input').value;
+    const converted = document.getElementById('bin-converted');
+
+    converted.innerText = textToBinaryOneline(input);
+
+});
+
+const textToBinarySplit = (input = '') => {
     let result = '';
-    result = text.split('').map(char => {
+    result = input.split('').map(char => {
         return char.charCodeAt(0).toString(2);
     }).join(' ');
+    return result;
+}
+
+const textToBinaryOneline = (input = '') => {
+    let result = '';
+    result = input.split('').map(char => {
+        return char.charCodeAt(0).toString(2);
+    }).join('');
     return result;
 }

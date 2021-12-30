@@ -1,40 +1,55 @@
 .bin-container {
-    padding: 20px;
-    width: 500px;
-    height: 500px;
-    max-width: 100%;
-    background: var(--bg--color);
-    border: 12px solid var(--bg-color);
-    filter: var(--filter1);
-    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
 }
 
-#text,
-#binary {
+.bin-container .bin-content {
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+    width: 40%;
+    padding: 40px;
+    background: var(--bg-color);
+    border: 12px solid var(--bg-color);
+    filter: var(--filter1);
+}
+
+.bin-container .bin-content #bin-input,
+.bin-container .bin-content #bin-converted {
+    padding: 10px;
     background: none;
-    border: none;
+    border: 3px solid var(--nav-bg);
+    filter: var(--filter2);
     color: var(--color);
     font-size: 1.25rem;
-    margin-top: auto;
     width: 100%;
     height: 180px;
     outline: none;
     resize: none;
 }
 
-#bin-btn {
+.conv-btns {
+    display: inline-flex;
+    gap: 1rem;
+}
+
+#btn-split,
+#btn-oneline {
     width: 100%;
     border: none;
     color: var(--color);
     cursor: pointer;
-    font-size: 1.25rem;
+    font-size: 1rem;
     padding: 8px 12px;
-    margin: 20px 5px 30px;
+    margin: 20px 0 30px;
     background: var(--bg-color);
     filter: var(--filter2);
 }
 
-#bin-btn:hover {
+#btn-split:hover,
+#btn-oneline:hover {
     filter: var(--filter3);
     transition: .3s ease-in-out;
 }
