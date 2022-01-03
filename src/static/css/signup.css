@@ -1,0 +1,116 @@
+.signup-container {
+    background: var(--bg-color);
+    height: 80vh;
+}
+
+.signup-container div,
+.signup-container p {
+    color: var(--color);
+}
+
+.signup-container form {
+    padding: 16px;
+    width: 45%;
+    margin: 0 auto;
+}
+
+.signup-container form .segment {
+    padding: 32px 0;
+    text-align: center;
+}
+
+.signup-container form .inputs-lg-sg {
+    display: flex;
+    flex-direction: baseline;
+    gap: 2rem;
+}
+
+.signup-container form button,
+.signup-container form input {
+    border: none;
+    outline: none;
+    border-radius: 320px;
+    padding: 16px;
+    background: #ebecf0;
+    text-shadow: 1px 1px 0 #fff;
+}
+
+.signup-container form label {
+    display: block;
+    margin-bottom: 24px;
+    width: 100%;
+}
+
+.signup-container form label.conf-pass {
+    width: 70%;
+    margin-left: 15%;
+}
+
+.signup-container form label input {
+    margin-right: 8px;
+    box-shadow: inset 2px 2px 5px #babecc, inset -5px -5px 10px #fff;
+    width: 100%;
+    transition: all .2s ease-in-out;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+}
+
+.signup-container form label input:focus {
+    box-shadow: inset 1px 1px 2px #babecc, inset -1px -1px 2px #fff;
+}
+
+.signup-container form button {
+    color: #61677c;
+    box-shadow: -5px -5px 20px #fff, 5px 5px 20px #babecc;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.signup-container form button:hover {
+    box-shadow: -2px -2px 5px #fff, 2px 2px 5px #babecc;
+}
+
+.signup-container form button .icon {
+    margin-right: 8px;
+}
+
+.signup-container form button.unit {
+    border-radius: 8px;
+    line-height: 0;
+    width: 48px;
+    height: 48px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 8px;
+    font-size: 1.2rem;
+}
+
+.signup-container form button.unit .icon {
+    margin-right: 0;
+}
+
+.signup-container form button.green {
+    display: block;
+    width: 50%;
+    margin-left: 25%;
+    margin-bottom: 40px;
+    color: var(--color2);
+    font-size: 1rem;
+}
+
+.signup-container form hr {
+    border: dotted grey;
+    border-bottom: none;
+    border-width: 5px;
+    width: 30%;
+    margin-left: 35%;
+    margin-bottom: 4%;
+}
+
+.signup-container h2 {
+    margin-bottom: -5px;
+}

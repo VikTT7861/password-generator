@@ -1,0 +1,32 @@
+<%- include ('partials/header')-%>
+    <div class="signup-container">
+        <form action="/index" method="post">
+            <div class="segment">
+                <h1>Sign Up</h1>
+            </div>
+            <div class="inputs-lg-sg">
+                <label><input type="text" placeholder="Full Name"></label>
+                <label><input type="text" placeholder="User"></label>
+            </div>
+            <div class="inputs-lg-sg">
+                <label><input type="email" placeholder="Email"></label>
+                <label><input type="password" placeholder="Password"></label>
+            </div>
+            <label class="conf-pass"><input type="password" placeholder=" Confirm Password"></label>
+            <button class="green">
+            <i class="icon fa fa-lock"><span> Sign Up</span></i>
+        </button>
+            <hr>
+            <h2>Sign Up With:</h2>
+            <div class="segment">
+                <button class="unit">
+        <i class="icon fa fa-facebook"></i>
+      </button>
+                <button class="unit">
+        <i class="icon fa fa-github"></i>
+      </button>
+                <button class="unit"><i class="icon fa fa-google"></i></button>
+            </div>
+        </form>
+    </div>
+    <%- include ('partials/footer')-%>

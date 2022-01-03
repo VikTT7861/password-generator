@@ -86,3 +86,21 @@ nav {
     text-decoration: none;
     color: var(--navfoot-color);
 }
+
+.login-sign {
+    display: flex;
+    flex-direction: flex-end;
+    gap: 1rem;
+    margin-right: 15px;
+}
+
+.sep {
+    background: var(--color2);
+    width: 1px;
+    height: 50%;
+    margin-top: 8px;
+}
+
+.login-sign a {
+    text-decoration: none;
+}
