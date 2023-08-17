@@ -29,9 +29,5 @@ To execute it, yo need to do the following steps:
 2. RUN  `npm i ejs` command to install ejs for templates
 2. Run `npm run dev` command to run the server
 
----
-
->NOTE: This code was retrieved from <https://github.com/smthari/Password-generator-using-html-css-javascript> and this code in this respository is only for practice purposes. 
-
 
 
