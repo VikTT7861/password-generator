@@ -10,6 +10,8 @@
 @import 'password.css';
 @import 'binary.css';
 @import 'sha256.css';
+@import 'sha384.css';
+@import 'sha512.css';
 
 /* Creating variables */
 

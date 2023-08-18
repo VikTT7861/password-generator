@@ -27,4 +27,12 @@ ROUTER.get('/sha256', (request: Request, response: Response) => {
     return response.render('sha256');
 });
 
+ROUTER.get('/sha384', (request: Request, response: Response) => {
+    return response.render('sha384');
+});
+
+ROUTER.get('/sha512', (request: Request, response: Response) => {
+    return response.render('sha512');
+});
+
 export default ROUTER;
