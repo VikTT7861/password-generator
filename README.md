@@ -42,7 +42,7 @@ To execute it, yo need to do the following steps:
 2. Run `npm run dev` command to run the server
 
 ---
-|Note: This is for practice purposes. We don't have a contracted host yet.
+> Note: This is for practice purposes. We don't have a contracted host yet.
 
 
 
