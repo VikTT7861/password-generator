@@ -1,11 +1,11 @@
-.bin-container {
+.sha256-container {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 80vh;
 }
 
-.bin-container .bin-content {
+.sha256-container .sha256-content {
     display: flex;
     flex-direction: column;
     gap: .8rem;
@@ -16,8 +16,8 @@
     filter: var(--filter1);
 }
 
-.bin-container .bin-content #bin-input,
-.bin-container .bin-content #bin-converted {
+.sha256-container .sha256-content #sha256-input,
+.sha256-container .sha256-content #sha256-converted {
     padding: 10px;
     background: none;
     border: 3px solid var(--nav-bg);
@@ -32,24 +32,21 @@
 
 .conv-btns {
     display: inline-flex;
-    gap: 1rem;
 }
 
-#btn-split,
-#btn-oneline {
+#btn-convert {
     width: 100%;
     border: none;
     color: var(--color);
     cursor: pointer;
     font-size: 1rem;
     padding: 8px 12px;
-    margin: 20px 0 30px;
+    margin: 20px 0 20px;
     background: var(--bg-color);
     filter: var(--filter2);
 }
 
-#btn-split:hover,
-#btn-oneline:hover {
+#btn-convert:hover {
     filter: var(--filter3);
     transition: .3s ease-in-out;
 }

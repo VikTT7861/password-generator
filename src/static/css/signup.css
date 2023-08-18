@@ -69,8 +69,20 @@
     font-weight: 600;
 }
 
+html[data-theme="dark"] .signup-container form button {
+    color: #61677c;
+    box-shadow: -5px -5px 20px #494848, 5px 5px 20px #1f1f1e;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+    font-weight: 600;
+}
+
 .signup-container form button:hover {
     box-shadow: -2px -2px 5px #fff, 2px 2px 5px #babecc;
+}
+
+html[data-theme="dark"] .signup-container form button:hover {
+    box-shadow: -2px -2px 5px #7e7d7d, 2px 2px 5px #161616;
 }
 
 .signup-container form button .icon {
@@ -94,6 +106,15 @@
 }
 
 .signup-container form button.green {
+    display: block;
+    width: 50%;
+    margin-left: 25%;
+    margin-bottom: 40px;
+    color: var(--color2);
+    font-size: 1rem;
+}
+
+html[data-theme="dark"] .signup-container form button.green {
     display: block;
     width: 50%;
     margin-left: 25%;

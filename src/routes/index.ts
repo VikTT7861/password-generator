@@ -23,4 +23,8 @@ ROUTER.get('/binary', (request: Request, response: Response) => {
     return response.render('binary');
 });
 
+ROUTER.get('/sha256', (request: Request, response: Response) => {
+    return response.render('sha256');
+});
+
 export default ROUTER;
