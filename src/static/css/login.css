@@ -110,8 +110,7 @@ html[data-theme="dark"] .login-container form button:hover {
 
 html[data-theme="dark"] .login-container form button.green {
     display: block;
-    width: 50%;
-    margin-left: 25%;
+    width: 100%;
     margin-bottom: 40px;
     color: var(--color2);
     font-size: 1rem;
